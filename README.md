@@ -54,16 +54,18 @@ echo "Some web content" | bash scripts/safe-memory-write.sh --source "web_search
 - **Unicode tricks**: zero-width chars, RTL overrides, tag characters
 - **Suspicious base64**: unexpected encoded blocks
 
-## Install as OpenClaw Skill
+## Install
+
+Clone into your OpenClaw local skills directory:
 
 ```bash
-openclaw skills install github:AdrianTeng/prompt-injection-defense
+git clone https://github.com/AdrianTeng/prompt-injection-defense.git ~/.openclaw/skills/prompt-injection-defense
 ```
 
-Or clone directly:
+OpenClaw auto-discovers skills in `~/.openclaw/skills/`. Verify with:
 
 ```bash
-git clone https://github.com/AdrianTeng/prompt-injection-defense.git
+openclaw skills list | grep injection
 ```
 
 ## Limitations
