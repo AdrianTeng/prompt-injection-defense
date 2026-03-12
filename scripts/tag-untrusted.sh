@@ -6,8 +6,7 @@ set -euo pipefail
 
 SOURCE="${1:?Usage: tag-untrusted.sh <source> '<command>'}"
 shift
-COMMAND="$*"
 
 echo "<untrusted_content source=\"${SOURCE}\">"
-eval "$COMMAND" 2>&1 || true
+"$@" 2>&1 || true
 echo "</untrusted_content>"
