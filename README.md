@@ -57,10 +57,14 @@ echo "Some web content" | bash scripts/safe-memory-write.sh --source "web_search
 ## Install as OpenClaw Skill
 
 ```bash
-openclaw skills install /path/to/prompt-injection-defense
+openclaw skills install github:AdrianTeng/prompt-injection-defense
 ```
 
-Or clone and reference from your agent's workspace.
+Or clone directly:
+
+```bash
+git clone https://github.com/AdrianTeng/prompt-injection-defense.git
+```
 
 ## Limitations
 
